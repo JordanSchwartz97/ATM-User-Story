@@ -1,7 +1,7 @@
 "use strict";
 const atmInfo = require('./atm');
-const walletInfo = require('./wallet')
 const accountInfo = require('./account');
+const walletInfo = require('./wallet');
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 atmInfo.validatePin();
@@ -20,9 +20,10 @@ function mainMenu(){
             atmInfo.deposit();
             mainMenu();
         case "check wallet":
-            console.log("You have $" + walletInfo.wallet + " in your wallet.");
+            atmInfo.walletBalance();
             mainMenu();
         case "quit":
+            console.log("Have a nice day!");
         process.exit();
         default:
             mainMenu();
