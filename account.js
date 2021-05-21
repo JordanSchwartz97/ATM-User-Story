@@ -1,5 +1,5 @@
-var pin = 1234;
-var balance = 1000;
+let pin = 1234;
+let balance = 1000;
 
 
 
