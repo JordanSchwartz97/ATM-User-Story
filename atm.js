@@ -27,7 +27,7 @@ function withdraw(){
     if(withdrawAmount <= accountInfo.bal){
        accountInfo.bal = accountInfo.bal - withdrawAmount;
        console.log("You withdrew $" + withdrawAmount + " from your bank.");
-       console.log("You now have $" + accountInfo.bal + " remaining in your bank account");
+       console.log("You now have $" + accountInfo.bal + " remaining in your bank account.");
        walletWithdrawlBalance();
     }
     else if (withdrawAmount > accountInfo.bal){
@@ -47,7 +47,7 @@ function deposit(){
         if(depositAmount <= walletInfo.wallet){
            accountInfo.bal = accountInfo.bal + depositAmount;
            console.log("You deposit $" + depositAmount + " into your bank.");
-           console.log("You have $" + accountInfo.bal + " remaining in your bank account");
+           console.log("You have $" + accountInfo.bal + " remaining in your bank account.");
            walletDepositBalance();
         }
         else if (depositAmount > walletInfo.wallet){
